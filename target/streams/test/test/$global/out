@@ -1,0 +1,10 @@
+[0m[[0mdebug[0m] [0mRunning Test com.ungersoft.fuzz.actors.PrintActorTest : subclass(false, org.scalatest.Suite) with arguments [0m
+[0m[[0mdebug[0m] [0mRunning Test com.ungersoft.fuzz.FuzzTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments [0m
+[0m[[0mdebug[0m] [0mRunning Test com.ungersoft.fuzz.actors.PhonemeActorTest : subclass(false, org.scalatest.Suite) with arguments [0m
+[0m[[0mdebug[0m] [0mRunning Test com.ungersoft.fuzz.actors.PhonemeSupervisorTest : subclass(false, org.scalatest.Suite) with arguments [0m
+[0m[[0minfo[0m] [0mPassed: : Total 4, Failed 0, Errors 0, Passed 4, Skipped 0[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	com.ungersoft.fuzz.FuzzTest[0m
+[0m[[0mdebug[0m] [0m	com.ungersoft.fuzz.actors.PrintActorTest[0m
+[0m[[0mdebug[0m] [0m	com.ungersoft.fuzz.actors.PhonemeSupervisorTest[0m
+[0m[[0mdebug[0m] [0m	com.ungersoft.fuzz.actors.PhonemeActorTest[0m
