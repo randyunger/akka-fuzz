@@ -1,6 +1,0 @@
-[0m[[0minfo[0m] [0m[32mSilentActor01Test:[0m[0m
-[0m[[0minfo[0m] [0m[32mA Silent Actor [0m[0m
-[0m[[0minfo[0m] [0m[31m- change state when it receives a message, single threaded *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  not implemented yet (SentenceTest.scala:23)[0m[0m
-[0m[[0minfo[0m] [0m[31m- change state when it receives a message, multi-threaded *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  not implemented yet (SentenceTest.scala:27)[0m[0m

@@ -23,7 +23,7 @@ with StopSystemAfterAll {
       import PhonemeProtocol._
 
       val phonemeActor = system.actorOf(Props(new PhonemeActor(testActor)), "s3")
-      phonemeActor ! RawSentence("whisper", 5)
+      phonemeActor.tell(RawSentence("whisper", 5), testActor)
 
       expectMsg(Sentence("whisper", "whisper", Set("whisp", "hispe", "isper", "whispe", "hisper")))
     }

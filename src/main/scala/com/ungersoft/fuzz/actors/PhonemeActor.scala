@@ -33,7 +33,7 @@ class PhonemeActor(receiver: ActorRef) extends Actor {
     case RawSentence(words, minSize, maxSize) => {
       val strippedSentence = words.toLowerCase.replaceAll("[^a-z]","")
       val phon = phonemes(words, minSize, maxSize)
-      receiver ! Sentence(words, strippedSentence, phon.toSet)
+      sender ! Sentence(words, strippedSentence, phon.toSet)
     }
   }
 }
