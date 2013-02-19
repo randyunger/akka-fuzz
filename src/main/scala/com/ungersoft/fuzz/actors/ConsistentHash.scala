@@ -51,17 +51,6 @@ class ConsistentHash[T](nodeMap: TreeMap[Int, T] = TreeMap.empty[Int, T])
   }
 
   def remove(node: T) = new ConsistentHash(nodeMap filter { case (k, v) => v != node })
-//  def remove(node: T) = {
-
-//    @annotation.tailrec
-//    def remove0(m: TreeMap[Int, T], toRemove: Seq[Int]): TreeMap[Int, T] = toRemove match {
-//      case Seq(a, rest @ _ *) => remove0(nodeMap - a, rest)
-//      case Seq() => nodeMap
-//    }
-//
-//    val toRemove = (1 to numberOfReplicas) map ((i: Int) => hash(i + node.hashCode))
-//    new ConsistentHash(remove0(nodeMap, toRemove))
-//  }
 
   def get(a: Any): T = {
     if (nodeMap.isEmpty) throw new NoSuchElementException("Cannot call .get() on empty ConsistentHash")
